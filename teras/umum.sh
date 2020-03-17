@@ -5,7 +5,6 @@
 #   Pemulihan Komputer dengan Imej Backup di Rangkaian
 
 #   Nama : Shaharudin bin Ahmad
-#   No Matrik : 810520015703001
 #   Kursus : Sarjana Muda Teknologi Maklumat dengan Pengkomputeran Rangkaian 
 #            Dengan Kepujian
 
