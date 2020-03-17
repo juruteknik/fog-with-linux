@@ -1,0 +1,45 @@
+DEFAULT vesamenu.c32
+MENU TITLE Server Pemulihan SK BANDAR
+MENU BACKGROUND skb/pics/bg.png
+MENU INCLUDE /pxelinux.cfg/master.cfg
+MENU MASTER PASSWD 9
+\n
+menu color title        1;36;44    #0ef40a #00000000 std
+menu color border       36;44   #0ef40a #00000000 std
+menu color help         36;44   #0ef40a #00000000 std
+menu color unsel        36;44   #0ef40a #00000000 std
+menu color sel          36;44   #000000 #0ef40a all
+menu color pwdborder    30;47   #0ef40a #00000000 std
+menu color pwdheader    31;47   #0ef40a #00000000 std
+menu color pwdentry     30;47   #0ef40a #00000000 std
+menu color timeout_msg  37;40   #0ef40a #00000000 std
+menu color timeout      37;40   #0ef40a #00000000 std
+
+\n
+LABEL fog.local
+	localboot 0
+	MENU DEFAULT
+	MENU LABEL Boot local hard disk
+	TEXT HELP
+	Boot daripada cakera keras tempatan.  
+	ENDTEXT
+\n
+LABEL Sistem Pemulihan FOG
+	MENU LABEL Sistem Pemulihan FOG
+	KERNEL vesamenu.c32
+	APPEND skb/menus/fog.cfg
+	TEXT HELP
+	Sistem Pemulihan FOG.
+	ENDTEXT
+\n
+LABEL Linux
+	MENU LABEL Linux Live OS
+	KERNEL vesamenu.c32
+	APPEND skb/menus/linux.cfg
+	TEXT HELP
+	Sistem Pengoperasian sementara.
+	ENDTEXT
+\n
+
+PROMPT 0
+TIMEOUT 30\n
